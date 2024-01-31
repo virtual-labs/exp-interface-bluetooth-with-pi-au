@@ -2,38 +2,37 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "In how many volts does Raspberry Pi run?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "1V",
+        "b": "2V",
+        "c": "5V",
+        "d": "12V"
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which one is a commercial patented product?",
+      "answers": {
+        "a": "Arduino",
+        "b": "Raspberry Pi",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How much RAM does Raspberry Pi have?",
+      "answers": {
+        "a": "512 Mb – 4Gb RAM",
+        "b": "412 Mb – 4Gb RAM",
+        "c": "212 Mb – 4Gb RAM",
+        "d": "312 Mb – 4Gb RAM"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
