@@ -12,8 +12,8 @@
       
     />
     <title>Vite App</title>
-    <script type="module" crossorigin src="./js/index-b2f1d88a.js"></script>
-    <link rel="stylesheet" href="./css/index-85e22c0f.css">
+    <script type="module" crossorigin src="./js/index-c67a9132.js"></script>
+    <link rel="stylesheet" href="./css/index-475d462e.css">
   </head>
 
   <body class="drawer drawer-end container-fluid h-full bg-base-100">
@@ -60,28 +60,27 @@
             <h2 class="text-xl font-bold mt-4 mb-4">How To Connect</h2>
 
             <div class="mt-4">
-              <img src="images/diagram.png" alt="diagram" />
+              <img src="./images/diagram.png" alt="diagram" />
             </div>
 
             <ol id="list" class="list-disc ml-8 mt-4">
-             
-              <li>Connect the Vcc of HC-05 Bluetooth Sensor to pin to VBUS of Raspberry Pi Pico</li>
-              <li>Connect the TX pin of HC-05 Bluetooth Sensor to  GP0 pin of Raspberry Pi</li>
-              <li>Connect the RX pin of HC-05 Bluetooth Sensor to GP1 Raspberry Pi</li>
-              <li>Connect the GND pic of HC-05 Bluetooth Sensor to GND pin of Raspberry Pi Pico</li>
-              <li>Positive terminal of LED  is connected to Resistor</li>
-              <li>The other terminal of resistor connected to GP16 pin of Raspberry Pi Pico</li>
-              <li>Negative terminal of LED  is connected to GND pin of Raspberry Pi Pico</li>
-              <li>Click the Bluetooth icon in the smart phone to turn on the bluetooth</li>
-              <li>Turn on the bluetooth by Click the switch given in the smart phone screen</li>
-              <li>Select Raspberry Pi from the Available devices</li>
-              <li>Click the pair option to pair the smartphone</li>
-            
-
-           
+              <ol>
+                <li>Connect the Vcc of HC-05 Bluetooth Sensor to the VBUS pin of Raspberry Pi Pico</li>
+                <li>Connect the TX pin of HC-05 Bluetooth Sensor to the GP0 pin of Raspberry Pi</li>
+                <li>Connect the RX pin of HC-05 Bluetooth Sensor to the GP1 pin of Raspberry Pi</li>
+                <li>Connect the GND pin of HC-05 Bluetooth Sensor to the GND pin of Raspberry Pi Pico</li>
+                <li>The positive terminal of the LED is connected to a resistor</li>
+                <li>The other terminal of the resistor is connected to the GP16 pin of Raspberry Pi Pico</li>
+                <li>The negative terminal of the LED is connected to the GND pin of Raspberry Pi Pico</li>
+                <li>Click the Bluetooth icon on the smartphone to turn on Bluetooth</li>
+                <li>Turn on Bluetooth by clicking the switch on the smartphone screen</li>
+                <li>Select Raspberry Pi from the available devices</li>
+                <li>Click the pair option to pair the smartphone</li>
             </ol>
-            <p id="list" class="list-disc  mt-4">
-              After completing the Circuit and paring the bluetooth ,  user can Turn-On and Turn-Off the Led by clicking the button given in the smart phone  </p>
+            <p id="list" class="list-disc mt-4">
+                After completing the circuit and pairing the Bluetooth, the user can turn on and turn off the LED by clicking the button on the smartphone.
+            </p>
+            
            
               <h2 class="text-xl font-bold mt-8">Connections Logs</h2>
               <ul class="list-disc ml-8 mt-4" id="connectionLog"></ul>
@@ -118,7 +117,7 @@
                 id="rasberryPi"
                 class="component bg-slate-200 rounded-lg text-center"
               >
-                <img src="images/pico.svg" class="w-20 h-20" />
+                <img src="./images/pico.svg" class="w-20 h-20" />
                 <span class="card-title">Raspberry Pi Pico</span>
               </div>
 
@@ -127,28 +126,28 @@
                 id="sensor"
                 class="component bg-slate-200 rounded-lg text-center"
               >
-                <img src="images/sensor1.svg" class="w-20 h-20" />
+                <img src="./images/sensor1.svg" class="w-20 h-20" />
                 <span class="card-title"> HC-05</span>
               </div>
               <div
               id="resistor"
               class="component bg-slate-200 rounded-lg text-center"
             >
-              <img src="images/resistor.svg" class="w-20 h-20" />
+              <img src="./images/resistor.svg" class="w-20 h-20" />
               <span class="card-title"> Resistor</span>
             </div>
             <div
             id="led"
             class="component bg-slate-200 rounded-lg text-center"
           >
-            <img src="images/led.svg" class="w-20 h-20" />
+            <img src="./images/led.svg" class="w-20 h-20" />
             <span class="card-title"> LED</span>
           </div>
               <div
                 id="object"
                 class="component bg-slate-200 rounded-lg text-center"
               >
-                <img src="images/box.svg" class="w-20 h-20" />
+                <img src="./images/box.svg" class="w-20 h-20" />
                 <span class="card-title">Smart Phone</span>
               </div>
             </div>
