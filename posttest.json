@@ -1,0 +1,27 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which command comes under Raspberry Pi terminal commands?",
+      "answers": {
+        "a": "ssh",
+        "b": "cp",
+        "c": "rm",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which command is used to create a new directory?",
+      "answers": {
+        "a": "ssh",
+        "b": "cp",
+        "c": "mkdir",
+        "d": "rmdir"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    }
+  ]
+}
