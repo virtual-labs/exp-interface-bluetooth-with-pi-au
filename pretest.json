@@ -1,0 +1,38 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "In how many volts does Raspberry Pi run?",
+      "answers": {
+        "a": "1V",
+        "b": "2V",
+        "c": "5V",
+        "d": "12V"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which one is a commercial patented product?",
+      "answers": {
+        "a": "Arduino",
+        "b": "Raspberry Pi",
+        "c": "Both a and b",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How much RAM does Raspberry Pi have?",
+      "answers": {
+        "a": "512 Mb – 4Gb RAM",
+        "b": "412 Mb – 4Gb RAM",
+        "c": "212 Mb – 4Gb RAM",
+        "d": "312 Mb – 4Gb RAM"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}
