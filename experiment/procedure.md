@@ -49,7 +49,7 @@
         <li>We should download The Serial Bluetooth Terminal App from Google Play Store. When we open the app, we can see some buttons labelled as M1, M2, M3, and so on. We need to set up the M1 as LED ON and M2 as LED OFF button.</li>
     </ul>
     <div>
-        <img src="./images/exp8_2.png" alt="conventional database" width='50%'>
+        <img src="./images/exp8_2.png" alt="" width='50%'>
     </div>
     <ul>
         <li>We need to program the Pico board for Bluetooth communication by using the file main.py.</li>
@@ -58,14 +58,14 @@
         <li>Now we must pair the app with our Bluetooth module. Verify that the code has been uploaded to the Pico board. When you turn on the Pico board, you can notice the Bluetooth module's LED blinking slowly.</li>
     </ul>
     <div>
-        <img src="./images/exp8_3.png" alt="conventional database" width='50%'>
+        <img src="./images/exp8_3.png" alt="" width='30%'>
     </div>
     <ul>
         <li>You can now press the "connection button," which is located in the top right corner of the program. A new window titled "Devices" will appear. You must first select your Bluetooth device. It was "Ble" in my situation, but it may be "HC-06" in yours. You will be linked to the Bluetooth module once you select the device.</li>
         <li>After connecting to Bluetooth and pressing the "Led ON" or "Led OFF" keys, you should be able to see the data as "1" or "0" on the terminal of the Android app.</li>
     </ul>
     <div>
-        <img src="./images/exp8_4.png" alt="conventional database" width='50%'>
+        <img src="./images/exp8_4.png" alt="" width='30%'>
     </div>
     <ul>
         <li>You can also notice that the LED turns on and off when you press the "led ON" and "led OFF" buttons. </li>
