@@ -1,38 +1,71 @@
 {
-  "version": 2.0,
+  "version": "2.0",
   "questions": [
+   
     {
-      "question": "In how many volts does Raspberry Pi run?",
-      "answers": {
-        "a": "1V",
-        "b": "2V",
-        "c": "5V",
-        "d": "12V"
+      "question": "Why is the resistor connected in series with the LED in the circuit?",
+      "options": {
+        "a": "To increase the brightness",
+        "b": "To limit the current",
+        "c": "To stabilize the voltage",
+        "d": "To connect to Bluetooth"
       },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
+      "correctAnswer": "b",
+      "difficulty": "Beginner"
     },
     {
-      "question": "Which one is a commercial patented product?",
-      "answers": {
-        "a": "Arduino",
-        "b": "Raspberry Pi",
-        "c": "Both a and b",
-        "d": "None of the above"
+      "question": "Which pin on the Raspberry Pi Pico is used to control the LED in the circuit?",
+      "options": {
+        "a": "GP0",
+        "b": "GP1",
+        "c": "GP19",
+        "d": "VBUS"
       },
       "correctAnswer": "c",
-      "difficulty": "intermediate"
+      "difficulty": "Intermediate"
     },
     {
-      "question": "How much RAM does Raspberry Pi have?",
-      "answers": {
-        "a": "512 Mb – 4Gb RAM",
-        "b": "412 Mb – 4Gb RAM",
-        "c": "212 Mb – 4Gb RAM",
-        "d": "312 Mb – 4Gb RAM"
+      "question": "What is the purpose of connecting the GND pin of the HC-05 to the GND pin of the Raspberry Pi Pico?",
+      "options": {
+        "a": "To supply power to the module",
+        "b": "To establish a common ground",
+        "c": "To send data to the smartphone",
+        "d": "To control the LED"
       },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
+      "correctAnswer": "b",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "What is the role of the TX pin on the HC-05 Bluetooth module in the circuit?",
+      "options": {
+        "a": "To receive data from the smartphone",
+        "b": "To send data to the Raspberry Pi Pico",
+        "c": "To power the LED",
+        "d": "To ground the circuit"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Which component sends Bluetooth commands to the Raspberry Pi Pico in the experiment?",
+      "options": {
+        "a": "LED",
+        "b": "Resistor",
+        "c": "Smartphone",
+        "d": "HC-05 module"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Beginner"
+    }, {
+      "question": "What protocol does the HC-05 Bluetooth module use to communicate with the Raspberry Pi Pico?",
+      "options": {
+        "a": "SPI",
+        "b": "I2C",
+        "c": "UART",
+        "d": "USB"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Intermediate"
     }
   ]
 }
