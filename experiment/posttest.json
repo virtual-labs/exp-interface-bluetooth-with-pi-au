@@ -1,27 +1,71 @@
 {
-  "version": 2.0,
+  "version": "2.0",
   "questions": [
     {
-      "question": "Which command comes under Raspberry Pi terminal commands?",
-      "answers": {
+      "question": "Which of the following commands is used in the Raspberry Pi terminal?",
+      "options": {
         "a": "ssh",
         "b": "cp",
         "c": "rm",
         "d": "All of the above"
       },
       "correctAnswer": "d",
-      "difficulty": "intermediate"
+      "difficulty": "Intermediate"
     },
     {
-      "question": "Which command is used to create a new directory?",
-      "answers": {
+      "question": "Which command is used to create a new directory in a Linux-based system?",
+      "options": {
         "a": "ssh",
         "b": "cp",
         "c": "mkdir",
         "d": "rmdir"
       },
       "correctAnswer": "c",
-      "difficulty": "intermediate"
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Which command displays the current working directory?",
+      "options": {
+        "a": "pwd",
+        "b": "ls",
+        "c": "cd",
+        "d": "touch"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "What is the purpose of the 'chmod' command in Linux?",
+      "options": {
+        "a": "Change file permissions",
+        "b": "Move a file",
+        "c": "Rename a file",
+        "d": "Delete a file"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Intermediate"
+    },
+    {
+      "question": "Which command is used to shut down a Raspberry Pi safely?",
+      "options": {
+        "a": "shutdown -h now",
+        "b": "halt",
+        "c": "poweroff",
+        "d": "All of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "Advanced"
+    },
+    {
+      "question": "How can you list all files, including hidden files, in a directory?",
+      "options": {
+        "a": "ls -l",
+        "b": "ls -a",
+        "c": "ls -h",
+        "d": "ls -r"
+      },
+      "correctAnswer": "b",
+      "difficulty": "Beginner"
     }
   ]
 }
