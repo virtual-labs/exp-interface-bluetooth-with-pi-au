@@ -3,7 +3,7 @@
   "questions": [
     {
       "question": "Which of the following commands is used in the Raspberry Pi terminal?",
-      "options": {
+      "answers": {
         "a": "ssh",
         "b": "cp",
         "c": "rm",
@@ -14,7 +14,7 @@
     },
     {
       "question": "Which command is used to create a new directory in a Linux-based system?",
-      "options": {
+      "answers": {
         "a": "ssh",
         "b": "cp",
         "c": "mkdir",
@@ -25,7 +25,7 @@
     },
     {
       "question": "Which command displays the current working directory?",
-      "options": {
+      "answers": {
         "a": "pwd",
         "b": "ls",
         "c": "cd",
@@ -36,7 +36,7 @@
     },
     {
       "question": "What is the purpose of the 'chmod' command in Linux?",
-      "options": {
+      "answers": {
         "a": "Change file permissions",
         "b": "Move a file",
         "c": "Rename a file",
@@ -47,7 +47,7 @@
     },
     {
       "question": "Which command is used to shut down a Raspberry Pi safely?",
-      "options": {
+      "answers": {
         "a": "shutdown -h now",
         "b": "halt",
         "c": "poweroff",
@@ -58,7 +58,7 @@
     },
     {
       "question": "How can you list all files, including hidden files, in a directory?",
-      "options": {
+      "answers": {
         "a": "ls -l",
         "b": "ls -a",
         "c": "ls -h",

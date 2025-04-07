@@ -1,10 +1,10 @@
 {
-  "version": "2.0",
+  "version": 2.0,
   "questions": [
    
     {
       "question": "Why is the resistor connected in series with the LED in the circuit?",
-      "options": {
+      "answers": {
         "a": "To increase the brightness",
         "b": "To limit the current",
         "c": "To stabilize the voltage",
@@ -15,7 +15,7 @@
     },
     {
       "question": "Which pin on the Raspberry Pi Pico is used to control the LED in the circuit?",
-      "options": {
+      "answers": {
         "a": "GP0",
         "b": "GP1",
         "c": "GP19",
@@ -26,7 +26,7 @@
     },
     {
       "question": "What is the purpose of connecting the GND pin of the HC-05 to the GND pin of the Raspberry Pi Pico?",
-      "options": {
+      "answers": {
         "a": "To supply power to the module",
         "b": "To establish a common ground",
         "c": "To send data to the smartphone",
@@ -37,7 +37,7 @@
     },
     {
       "question": "What is the role of the TX pin on the HC-05 Bluetooth module in the circuit?",
-      "options": {
+      "answers": {
         "a": "To receive data from the smartphone",
         "b": "To send data to the Raspberry Pi Pico",
         "c": "To power the LED",
@@ -48,7 +48,7 @@
     },
     {
       "question": "Which component sends Bluetooth commands to the Raspberry Pi Pico in the experiment?",
-      "options": {
+      "answers": {
         "a": "LED",
         "b": "Resistor",
         "c": "Smartphone",
@@ -58,7 +58,7 @@
       "difficulty": "Beginner"
     }, {
       "question": "What protocol does the HC-05 Bluetooth module use to communicate with the Raspberry Pi Pico?",
-      "options": {
+      "answers": {
         "a": "SPI",
         "b": "I2C",
         "c": "UART",
