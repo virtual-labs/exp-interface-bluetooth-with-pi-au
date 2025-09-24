@@ -1,4 +1,3 @@
-### Theory
 
 #### Introduction
 This experiment demonstrates how to control an LED using an Android application via Bluetooth. We will use the HC-05 Bluetooth module, which is easy to interface with microcontrollers and cost-effective. It operates using UART communication, allowing seamless connectivity between the Raspberry Pi Pico board and the Bluetooth module.
@@ -7,7 +6,7 @@ This experiment demonstrates how to control an LED using an Android application 
 
 #### 1. Bluetooth Module (HC-05)
 The HC-05 is a Bluetooth module primarily used for wireless serial communication. It follows UART (Universal Asynchronous Receiver-Transmitter) protocol and is compatible with microcontrollers like Arduino, Raspberry Pi, and Raspberry Pi Pico. The module operates at a voltage of 3.3V to 5V and is commonly used in IoT applications.
-<div><img src="./images/HC-05.png" alt="conventional database" width='40%'></div>
+<div><img src="./images/HC-05.png" alt="conventional database" width='30%'></div>
 
 #### 2. Raspberry Pi Pico
 The **Raspberry Pi Pico** is a low-cost microcontroller board featuring flexible digital interfaces. It is powered by the **RP2040**, Raspberry Pi's first in-house microcontroller, which includes dual ARM Cortex-M0+ cores. The Pico supports various peripherals, including UART, SPI, and I2C, making it suitable for embedded applications.
@@ -26,15 +25,15 @@ The board can be powered by multiple sources, such as a **single Lithium-Ion bat
 The Raspberry Pi Pico is selected for this experiment over a full Raspberry Pi single-board computer due to its optimized design for embedded applications requiring basic hardware control and wireless communication. Unlike a Raspberry Pi, which operates a complete operating system suited for complex computing tasks, the Pico functions without an OS, enabling direct, real-time interaction with peripherals like the HC-05 Bluetooth module and the LED. This eliminates unnecessary overhead, ensuring efficient execution of simple tasks such as toggling an LED based on UART signals. Additionally, its low cost and minimal power requirements (operable via USB or small batteries at 3.3V) make it an economical and practical choice.
 #### 3. LED
 A **Light Emitting Diode (LED)** is used as an indicator in this experiment. It emits light when an electric current passes through it, providing a visual indication of system activity.
-<div><img src="./images/LED.png" alt="conventional database" width='40%'></div>
+<div><img src="./images/LED.png" alt="conventional database" width='15%'></div>
 
 #### 4. Resistor
 A **resistor** is used to limit the current flowing through the LED, preventing damage due to excessive current.
-<div><img src="./images/pin.png" alt="conventional database" width='40%'></div>
+<div><img src="./images/pin.png" alt="conventional database" width='10%'></div>
 
 #### 5. Phone
 A **smartphone** running an Android application will be used to send Bluetooth commands to the Raspberry Pi Pico. The app will communicate with the HC-05 Bluetooth module, allowing control of the LED remotely.
-<div><img src="./images/phone.jpg" alt="conventional database" width='30%'></div>
+<div><img src="./images/phone.jpg" alt="conventional database" width='15%'></div>
 
 #### Circuit Connection
 The components are connected as follows to enable wireless control of the LED via Bluetooth, with each connection serving a specific purpose:
