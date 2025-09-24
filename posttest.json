@@ -1,0 +1,61 @@
+{
+  "version": 2.0,
+  "questions": [
+   
+    {
+      "question": "Which Raspberry Pi pin is used to receive data from the HC-05 Bluetooth module?",
+      "answers": {
+        "a": "GP0",
+        "b": "GP1",
+        "c": "GP19",
+        "d": "VBUS"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "What must you do on the smartphone before sending commands to the Raspberry Pi?",
+      "answers": {
+        "a": "Turn on Bluetooth and pair with HC-05",
+        "b": "Connect to Wi-Fi",
+        "c": "Install Python",
+        "d": "Charge the battery"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which component lights up when the Raspberry Pi receives a command from the smartphone?",
+      "answers": {
+        "a": "HC-05 module",
+        "b": "Resistor",
+        "c": "LED",
+        "d": "Battery"
+      },
+      "correctAnswer": "c",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "What is the role of the resistor in the LED circuit?",
+      "answers": {
+        "a": "To limit current and protect the LED",
+        "b": "To turn the LED on and off",
+        "c": "To send Bluetooth data",
+        "d": "To power the Raspberry Pi"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Beginner"
+    },
+    {
+      "question": "Which protocol is used by the HC-05 to communicate with the Raspberry Pi Pico?",
+      "answers": {
+        "a": "UART",
+        "b": "SPI",
+        "c": "I2C",
+        "d": "USB"
+      },
+      "correctAnswer": "a",
+      "difficulty": "Beginner"
+    }
+  ]
+}

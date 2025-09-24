@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>LED Bluetooth Control Simulation</title>
+    <script type="module" crossorigin src="js/index-bd3a44ab.js"></script>
+    <link rel="stylesheet" href="css/index-7d8f7a1e.css">
+  </head>
+
+  <body class="drawer drawer-end container-fluid h-full" style="background-color: white;">
+    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+      <div class="flex flex-col sm:flex-row">
+        <div class="w-1/3 sm:block pl-6 pr-6" style="background-color: #f1f1f1; color: black;">
+          <div id="theory" style="position: relative">
+            <div style="position: absolute; right: 0; top: 12px">
+              <i style="color: rgb(41, 156, 222); display: flex; justify-content: flex-end;" class="fa-solid fa-circle-info fa-xl" id="info"></i>
+            </div>
+            <div style="display: none" id="list">
+              <h2 class="text-xl font-bold mt-4 mb-4">General Instructions</h2>
+              <ul class="list-disc ml-8 mt-4">
+                <li>Click on components to interact with them in the connection area.</li>
+                <li>Hover over Raspberry Pi Pico pins to view pin information.</li>
+                <li>Double-click on connection points to create wire connections.</li>
+                <li>Double-click in empty space to extend or bend wire connections.</li>
+              </ul>
+            </div>
+            <h2 class="text-xl font-bold mt-4 mb-4">How To Connect</h2>
+            <div class="mt-4">
+              <img src="images/diagram.png" alt="connection_diagram" style="max-width: 100%; height: auto;" />
+            </div>
+            <ol class="list-disc ml-8 mt-4">
+              <li>Connect VCC of HC-05 Bluetooth module to VBUS (5V) of Raspberry Pi Pico.</li>
+              <li>Connect TXD of HC-05 to GP0 of Raspberry Pi Pico.</li>
+              <li>Connect RXD of HC-05 to GP1 of Raspberry Pi Pico.</li>
+              <li>Connect GND of HC-05 to GND of Raspberry Pi Pico.</li>
+              <li>Connect the positive terminal of the LED to the resistor.</li>
+              <li>Connect the other terminal of the resistor to GP19 of Raspberry Pi Pico.</li>
+              <li>Connect the negative terminal of the LED to GND of Raspberry Pi Pico.</li>
+              <li>Click the Bluetooth icon on the smartphone to enable Bluetooth.</li>
+              <li>Turn on Bluetooth by clicking the switch on the smartphone screen.</li>
+              <li>Select Raspberry Pi from available devices to pair.</li>
+              <li>After pairing, use the smartphone buttons to turn the LED on or off.</li>
+            </ol>
+            <h2 class="text-xl font-bold mt-8">Connection Logs</h2>
+            <ul class="list-disc ml-8 mt-4" id="connectionLog"></ul>
+          </div>
+        </div>
+
+       <div class="sm:w-2/3">
+  <div class="h-full">
+    <div class="button-container">
+      <label for="my-drawer-4" class="drawer-button btn btn-primary btn-md float-right w-40 m-4">☰ CODE</label>
+      <button class="button float-right btn btn-warning btn-md w-40 m-4" onclick="window.location.href=window.location.href">RESET</button>
+      <button id="undoButton" class="float-right btn btn-md w-40 m-4" style="background-color: #3498db; border: none; color: white;">UNDO</button>
+    </div>
+    <div id="components" class="components">
+      <div class="component-row">
+        <div id="rasberryPi" class="component bg-slate-200 rounded-lg text-center">
+          <img src="images/pico.svg" class="w-20 h-20" />
+          <span class="card-title" style="color: black;">Raspberry Pi Pico</span>
+        </div>
+        <div id="sensor" class="component bg-slate-200 rounded-lg text-center">
+          <img src="images/sensor1.svg" class="w-20 h-20" />
+          <span class="card-title" style="color: black;">HC-05</span>
+        </div>
+        <div id="resistor" class="component bg-slate-200 rounded-lg text-center">
+          <img src="images/resistor.svg" class="w-20 h-20" />
+          <span class="card-title" style="color: black;">Resistor</span>
+        </div>
+        <div id="led" class="component bg-slate-200 rounded-lg text-center">
+          <img src="images/led.svg" class="w-20 h-20" />
+          <span class="card-title" style="color: black;">LED</span>
+        </div>
+        <div id="object" class="component bg-slate-200 rounded-lg text-center">
+          <img src="images/box.svg" class="w-20 h-20" />
+          <span class="card-title" style="color: black;">Smartphone</span>
+        </div>
+      </div>
+    </div>
+    <div id="componentDescription" class="text-sm text-gray-700 mt-2 p-2 bg-gray-100 rounded-lg" style="display: none; width: 100%; max-width: 600px; margin-left: 1rem;">
+      Hover over a component to see its description.
+    </div>
+    <hr />
+    <div id="svg" class="h-auto overflow-hidden m-4">
+      <span class="text-white bg-slate-600 font-serif font-light text-xl border border-solid border-black float-right text-center w-52 h-12 rounded-lg" id="displayInfo">CONNECTOR INFO</span>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="drawer-side">
+  <label for="my-drawer-4" class="drawer-overlay"></label>
+  <pre contenteditable="false" spellcheck="false">
+    <span>from machine import Pin, UART</span>
+    <span></span>
+    <span>uart = UART(0, 9600)</span>
+    <span>led = Pin(19, Pin.OUT)</span>
+    <span></span>
+    <span>while True:</span>
+    <span>    if uart.any():</span>
+    <span>        command = uart.readline()</span>
+    <span>        if command == b'ON':</span>
+    <span>            led.high()</span>
+    <span>            print("LED ON")</span>
+    <span>        elif command == b'OFF':</span>
+    <span>            led.low()</span>
+    <span>            print("LED OFF")</span>
+    <div class="flex justify-start space-x-4 mt-4">
+      <button id="backButton" class="btn btn-secondary">Back</button>
+      <button id="codeSubmit" class="btn btn-primary">Submit</button>
+    </div>
+  </pre>
+</div>
+
+    <div class="fixed inset-0 items-center justify-center bg-gray-900 bg-opacity-75 hidden" id="errorBox">
+      <div class="bg-red-500 p-8 rounded-lg shadow-lg">
+        <h2 class="text-white text-2xl mb-4" id="errorHeading">Error!</h2>
+        <p class="text-white" id="errorText">Sorry, an error has occurred.</p>
+        <button id="closeErrorBox" class="mt-4 px-4 py-2 bg-white text-red-500 font-semibold rounded-lg shadow-md hover:bg-red-500 hover:text-white">OK</button>
+      </div>
+    </div>
+  <script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+  
+</html>
