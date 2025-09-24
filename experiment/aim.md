@@ -1,4 +1,4 @@
-### Aim of the Experiment
+
 To establish Bluetooth communication between a Raspberry Pi Pico and a smartphone, enabling remote control of an LED. The system should allow the LED to turn **ON** upon receiving a '1' signal and turn **OFF** upon receiving a '0' signal from the smartphone.
 
 This experiment explores the integration of Bluetooth technology with embedded systems, demonstrating wireless communication and remote device management. It provides insights into microcontroller programming, serial communication, and real-world IoT applications.
